@@ -7,7 +7,7 @@ import pprint
 from bs4 import BeautifulSoup 
 
 #
-#   ½âÎöÂ·¾¶
+#   è§£æè·¯å¾„
 # 
 
 def parse_path(url):
@@ -16,14 +16,14 @@ def parse_path(url):
     return '/'.join(url)
 
 #
-#   ´´½¨ÎÄ¼ş¼Ğ   
+#   åˆ›å»ºæ–‡ä»¶å¤¹   
 #
 
 def make_a_dir(path):
     os.path.exists('.'+path) or os.makedirs('.'+path)
 
 #
-#   ½âÎöcssÎÄ¼ş °ÑbackgroundÏÂÔØÏÂÀ´   
+#   è§£æcssæ–‡ä»¶ æŠŠbackgroundä¸‹è½½ä¸‹æ¥   
 #
 
 def parse_file(url, content):
@@ -34,7 +34,7 @@ def parse_file(url, content):
         #print r
 
 #
-#   Ïà¶ÔÂ·¾¶½âÎö³É¾ø¶ÔÂ·¾¶
+#   ç›¸å¯¹è·¯å¾„è§£ææˆç»å¯¹è·¯å¾„
 #
 
 def parse_relative_path(url, path):
@@ -57,7 +57,7 @@ def parse_relative_path(url, path):
     return '/'.join(url)+'/'+path
 
 #
-#   ±£´æËØ²Ä
+#   ä¿å­˜ç´ æ
 #
 
 def save_metrial(url):
@@ -73,7 +73,7 @@ def save_metrial(url):
     urllib.urlretrieve(url, '.'+p_url.path)
 
 #
-#   ±£´æÎÄ¼ş
+#   ä¿å­˜æ–‡ä»¶
 #
 
 def save_file(url, site, type):
