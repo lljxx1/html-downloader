@@ -1,3 +1,3 @@
 htmldownload
 =====
-python htmldownload.py http://www.blues-the.com/ 
+python htmldownload.py http://www.exmaple.com/ 
